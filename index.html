@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Codecademy Cheat Sheet: CSS Combinators</title>
+</head>
+<body>
+    <nav>
+        <header>
+            <h1>Codecademy Cheat Sheet</h1>
+            <p>CSS Combinators</p>
+        </header>
+        <ul>
+            <li><a href="#reference">Reference Table</a></li>
+            <li><a href="#descendant">Descendant Selector</a></li>
+            <li><a href="#adjacent">Adjacent Selector</a></li>
+            <li><a href="#direct">Direct Child</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2 id="reference">Reference Table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="l_corner">Selector</th>
+                        <th>Name</th>
+                        <th class="r_corner">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code-inline>&nbsp;</code-inline></td>
+                        <td>Descendant Selector</td>
+                        <td>Combines two selectors where elements matching the second selector are selected if they have an ancestor matching the firt selector</td>
+                    </tr>
+                    <tr>
+                        <td><code-inline>+</code-inline></td>
+                        <td>Adjacent Selector</td>
+                        <td>Placed betwen two selectors, matches only elements matched by second selector if they are the next sibling element of the first</td>
+                    </tr>
+                    <tr>
+                        <td><code-inline>></code-inline></td>
+                        <td>Direct Child</td>
+                        <td>Placed betwen two selectors, matches only elements matched by second selector if they are direct children of the first</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2 id="descendant">Descendant Selector</h2>
+            <p>Select all &lt;a&gt;'s that are nested inside an &lt;li&gt;</p>
+            <h3>CSS</h3>
+            <code-block>
+<pre>li a {
+    color: teal;
+} </pre>
+            </code-block>
+            <h3>HTML</h3>
+            <code-block>
+<pre>&lt;li&gt;
+    ...
+    &lt;a&gt;</pre>
+            </code-block>
+        </section>
+        <section>
+            <h2 id="adjacent">Adjacent Selector</h2>
+            <p>Select only the paragraphs that are immediately preceded by an &lt;h1&gt;</p> 
+            <h3>CSS</h3>
+            <code-block>
+<pre>hi + p {
+    color: red;
+} </pre>
+            </code-block>
+            <h3>HTML</h3>
+            <code-block>
+<pre>&lt;h1&gt; 
+&lt;p&gt;</pre>
+            </code-block>
+        </section>
+        <section>
+            <h2 id="direct">Direct Child</h2>
+            <p>Select only the &lt;li&gt;'s that are direct children of a &lt;div&gt; element</p> 
+            <h3>CSS</h3>
+            <code-block>
+<pre>div > li {
+    color: white;
+} </pre>
+            </code-block>
+            <h3>HTML</h3>
+            <code-block>
+<pre>&lt;div&gt;
+    &lt;li&gt;</pre>
+            </code-block>
+        </section>
+    </main>
+    <footer>
+        <p>Code examples from Web Developer Bootcamp by Colt Steele. Descriptions of combinators from the Mozilla Development Network. Design by Rodrigo Pimentel.</p>
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    margin: 1em 0 0 0;
+    color: #0c002e;
+}
+
+#reference {
+    margin: 1vh 0 1vh 0;
+}
+
+nav {
+    display: inline-block;
+    position: fixed;
+    width: 16vw;
+    height: 100vh;
+    background-color: #0c002e;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9;
+}
+
+nav > ul {
+    list-style: none;
+}
+
+nav > ul > li {
+    font-size: 1.1vw;
+    border-bottom: 1px solid #0c002e;
+}
+
+nav > ul > li:hover {
+    background-color: #270094;
+}
+
+nav h1 {
+    font-family: 'Source Code Pro', monospace;
+    margin: 4vh 0 4vh 0;
+    font-size: 2vw;
+    padding-left: 1vw;
+    color: #ffffff;
+}
+
+nav p {
+    font-size: 1.3vw;
+    background-color: #270094;
+    color: #ffffff;
+    padding: 1vh 1vw 1vh 1vw;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    padding: 1vh 0 1vh 1vw;
+    color: #ffffff;
+}
+
+main {
+    display: inline-block;
+    margin: 3vh 0 0 17vw;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    width: 81vw;
+}
+
+section {
+    margin: 0 0 5vh 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr:nth-child(2n) {
+    border-top: 1px solid #270094;
+    border-bottom: 1px solid #270094;
+}
+
+td {
+    padding: 0.8em;
+}
+
+th {
+    background-color: #270094;
+    color: #ffffff;
+    padding: 0.3em;
+    border-radius: 2px;
+}
+
+.l_corner {
+    border-radius: 0.3em 0 0 0;
+}
+
+.r_corner {
+    border-radius: 0 0.3em 0 0;
+}
+
+code-block > pre {
+    background-color: #e0e0e0;
+    border-radius: 0.3em;
+    padding: 0.6em 0.6em 0.6em 0.6em;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 1em 0 1em 0;
+}
+
+code-inline {
+    background-color: #e0e0e0;
+    padding: 0.2em 0.2em 0.2em 0.2em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+footer {
+    text-align: center;
+    margin: 0 0 3vh 16vw;
+    font-style: italic;
+}
